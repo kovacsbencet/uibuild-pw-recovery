@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* END OF CSS RESET*/
+
+#root{
+    background-color: #f2f2f2;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container h1{
+    margin-bottom: 10px;
+    color: #006837;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#inputfield{
+    padding: 20px;
+    background-color: #f9c582;
+    color: #006837;
+    max-width: 520px;
+    height: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#inputfield p{
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+    background-color: whitesmoke;
+    color: #98a991;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 64px;
+    padding: 15px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    background-color: #f9c582;
+    border-radius: 100%;
+    padding: 50px;
+}
+
+#btn h4{
+    text-align: center;
+    color: #006837;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 520px) {
+    #container h1{
+        font-size: 24px;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+  }
